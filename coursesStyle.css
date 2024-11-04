@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+
+.header{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(Images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    height: 100vh;
+}
+
+.header nav{
+    padding: 2% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header nav a img{
+    width: 150px;
+    height: 50px;
+    padding: 8px 0;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 12px;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #f44336;
+    display: block;
+    margin: 5px 0;
+    transition: 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.header h1{
+    color: white;
+    vertical-align: middle;
+    line-height: 50vh;
+}
+
+.courses{
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    text-align: center;
+}
+
+.courses h2{
+    margin-top: 65px;
+    font-size: 30px;
+}
+
+.courses #desc{
+    color: black;
+    opacity: 75%;
+    margin-top: 15px;
+    margin-bottom: 65px;
+}
+
+.courses .classes{
+    display: flex;
+    align-items: center;
+}
+
+.courses .classes div{
+    display: inline-block;
+    width: 325px;
+    height: 200px;
+    background-color: hsl(34, 79%, 94%);
+    border-radius: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+
+.courses .classes div:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 0px 5px hsl(0, 0%, 75%), -5px 0px 5px hsl(0, 0%, 75%), 0px 5px 5px hsl(0, 0%, 75%), 0px -5px 5px hsl(0, 0%, 75%);
+    
+}
+
+.courses .classes div h6{
+    font-size: 18px;
+    padding: 30px 0;
+    margin-bottom: 1px;
+}
+
+.courses .classes div p{
+    opacity: 75%;
+    padding: 0 10px;
+}
+
+#class1{
+    margin-left: 275px;
+    margin-right: 30px;
+}
+
+#class2{
+    margin-right: 30px;
+}
+
+#class3{
+    margin-right: 275px;
+}
+
+.facilities{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.facilities p{
+    opacity: 75%;
+    margin-top: 35px;
+    margin-bottom: 100px;
+}
+
+.facilities-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#fac-img1, #fac-img2, #fac-img3{
+    width: 350px;
+    height: 300px;
+    text-align: left;
+}
+
+#fac-img1 img, #fac-img2 img, #fac-img3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+#fac-img1{
+    margin-left: 150px;
+}
+
+#fac-img3{
+    margin-right: 150px;
+}
+
+#fac-img1 h6, #fac-img2 h6, #fac-img3 h6{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+}
+
+footer h6{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+footer p{
+    opacity: 75%;
+}
+
+.social{
+    margin-bottom: 100px;
+    margin-top: 50px;
+    color: orange;
+    display: flex;
+    position: absolute;
+    width: 300px;
+    justify-content: space-between;
+    left: 40%;
+}

@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+
+.header{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(Images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    height: 100vh;
+}
+
+.header nav{
+    padding: 2% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header nav a img{
+    width: 150px;
+    height: 50px;
+    padding: 8px 0;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 12px;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #f44336;
+    display: block;
+    margin: 5px 0;
+    transition: 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.header h1{
+    color: white;
+    vertical-align: middle;
+    line-height: 50vh;
+}
+
+main{
+    margin: 75px 100px;
+    display: flex;
+    padding: 20px;
+}
+
+main .text{
+    box-sizing: border-box;
+    width: 1000px;
+    flex: 1;
+}
+
+main img{
+    float: right;
+    box-sizing: border-box;
+    flex: 2;
+    max-width: 50%;
+}
+
+.text h2, p{
+    max-width: 100%;
+}
+
+.text h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.text p{
+    opacity: 75%;
+    margin-bottom: 30px;
+}
+
+.text button{
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid orange;
+    color: orange;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+.text button:hover{
+    background-color: orangered;
+    border: 1px solid orangered;
+    color: white;
+}
+
+footer{
+    text-align: center;
+}
+
+footer h6{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+footer p{
+    opacity: 75%;
+}
+
+.social{
+    margin-bottom: 100px;
+    margin-top: 50px;
+    color: orange;
+    display: flex;
+    position: absolute;
+    width: 300px;
+    justify-content: space-between;
+    left: 40%;
+}
